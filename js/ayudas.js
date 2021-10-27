@@ -1,5 +1,5 @@
-const bosques = confirm("Quiere presentarse para ayuad a los bosques");
-const mar = confirm("Quier presentarse como voluntario para ayudar en los mares y oceanos")
+const bosques = confirm("¿Quiere presentarse para ayuad a los bosques?");
+const mar = confirm("¿Quier presentarse como voluntario para ayudar en los mares y oceanos?")
 if (bosques){
     let cajaBase = document.getElementById('codigo-base');
     let cajabosques = document.getElementById('codigo-bosque');

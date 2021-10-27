@@ -8,7 +8,7 @@ let cantidad = prompt("Cuanto desea donar")
 let cantidadNumerica = parseInt(cantidad)
 
 const cantidadActual = donacionesActuales  + cantidadNumerica;
-let cantidadDeDonaciones= document.getElementById("cantidadDentroDeDiv").innerHTML ="si esta aqui es porque desea ayudar de manera monetario, actualmente las donaciones totales son de "+cantidadActual +"$, la ONG aradece de su donacion que ayudara a limpiar los oceanos y mares y ayudara a la reforestacion"
+let cantidadDeDonaciones= document.getElementById("cantidadDentroDeDiv").innerHTML ="Gracias por su donacion actualmente las donaciones totales son de "+cantidadActual +"$ sumando la suya, GlobLife agradece de su donacion que ayudara a la adquicicion de materiales y expertos que ayudaran a limpiar los oceanos, mares y ayudara a la reforestacion y reconstrucion de oceanos,mares y bosques"
 
 siDona.style.display = "block";
 noDono.style.display = "none";
