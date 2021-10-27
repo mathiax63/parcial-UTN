@@ -7,10 +7,11 @@ if(deseaDonar){
 let cantidad = prompt("Cuanto desea donar")
 let cantidadNumerica = parseInt(cantidad)
 
-document.write( donacionesActuales  + cantidadNumerica);
-  
-siDona.style.display = "block"
-noDono.style.display = "none"
+const cantidadActual = donacionesActuales  + cantidadNumerica;
+let cantidadDeDonaciones= document.getElementById("cantidadDentroDeDiv").innerHTML ="si esta aqui es porque desea ayudar de manera monetario, actualmente las donaciones totales son de "+cantidadActual +"$, la ONG aradece de su donacion que ayudara a limpiar los oceanos y mares y ayudara a la reforestacion"
+
+siDona.style.display = "block";
+noDono.style.display = "none";
 
 
 
