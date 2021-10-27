@@ -1,0 +1,100 @@
+
+
+body{
+    background-color:  #008f39;
+}
+h1{
+    text-align: center;
+}
+.nav-home{
+background-color: darkgreen;  
+padding: 5px;
+
+}
+ul{
+     display: flex;
+    text-decoration: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.links{
+   display: inline-block;
+    list-style:none ;
+    padding: 1px 60px;
+border: solid 1px white;
+}
+.articulos{
+    margin: 30px;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+.productos{
+    
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.img{
+    width: 100%;
+    max-height: 200px;
+    margin: 20px;
+    
+
+}
+.img2{
+    width: 100%;
+    max-height: 250px;
+    margin:20px
+}
+footer{
+    border: solid 1px white;
+}
+.ayudas-bosque{
+    display: none;
+    
+}
+.ayudas-mar {
+    display: none;
+}
+.siDono{
+    display: none;
+}
+@media (min-width: 600px) {
+    .img{width: 100%;
+    }
+   
+
+    .articulos{
+        width: 100%;
+        margin: 120px;
+      display: flex;
+flex-wrap: wrap;
+flex-direction: column;  
+    }
+    .footerSection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+}
+@media (min-width: 1024px){
+
+.articulo-base{
+    display: flex;
+}
+    .links{
+        
+         margin: 10px 40px;
+        
+     }
+}
