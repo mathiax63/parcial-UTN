@@ -22,6 +22,7 @@ ul{
 }
 
 .links{
+    border-radius: 3px;
    display: inline-block;
     list-style:none ;
     padding: 1px 60px;
@@ -118,10 +119,16 @@ flex-direction: column;
 }
     .links{
         
+        
          margin: 10px 40px;
         
      }
      ul{
         justify-content: space-between;
+     }
+     a{
+        
+         margin: 30px;
+         padding: 30px;
      }
 }
