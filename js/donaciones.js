@@ -21,7 +21,10 @@ if(cantidad === null){
 noDono.style.display = "block";
 }
 
-
+if(cantidad ===""){
+    siDona.style.display = "none";
+ noDono.style.display = "block";
+ }
 
 }
 

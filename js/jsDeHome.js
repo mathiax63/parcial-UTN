@@ -12,6 +12,17 @@ if(edad === null){
 if(pais === null){
     pais = "ya que contamos con sucursales por todo el mundo"
 }
+if(nombre === ""){
+  nombre = 'Visitante'
+}
+if(edad === ""){
+  edad = "15 a 70"
+}
+
+if(pais === ""){
+  pais = "ya que contamos con sucursales por todo el mundo"
+}
+
 
 const saludo = "<h3>Hola, " + nombre + " "+"bienvenido"+" a "+ "GlobLife" +"</h3>";
 
