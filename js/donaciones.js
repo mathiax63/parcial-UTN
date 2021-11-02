@@ -7,14 +7,19 @@ if(deseaDonar){
 let cantidad = prompt("Cuanto desea donar")
 
 let cantidadNumerica = parseInt(cantidad)
-let gracias = alert("Gracias por su donacion")
-let aviso = alert("En las proximas semanas recibirá Emails del avance logrado gracias a su donacion")
+
 
 const cantidadActual = donacionesActuales  + cantidadNumerica;
 let cantidadDeDonaciones= document.getElementById("cantidadDentroDeDiv").innerHTML ="Gracias por su donacion actualmente las donaciones totales son de "+cantidadActual +"$ sumando la suya, GlobLife agradece de su donacion que ayudara a la adquicicion de materiales y expertos que ayudaran a limpiar los oceanos, mares y ayudara a la reforestacion y reconstrucion de oceanos,mares y bosques"
 
 siDona.style.display = "block";
 noDono.style.display = "none";
+
+if(cantidad !== null && cantidad !== ""){
+    let gracias = alert("Gracias por su donacion")
+let aviso = alert("En las proximas semanas recibirá Emails del avance logrado gracias a su donacion")
+}
+
 
 if(cantidad === null){
    siDona.style.display = "none";
@@ -25,6 +30,7 @@ if(cantidad ===""){
     siDona.style.display = "none";
  noDono.style.display = "block";
  }
+ 
 
 }
 
