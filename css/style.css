@@ -109,14 +109,29 @@ p{
       display: flex;
 flex-wrap: wrap;
 flex-direction: column;  
+padding: 20px;
+margin: 10px;
     }
     .footerSection{
-    display: flex;
+    display: block;
     justify-content: space-around;
     flex-wrap: wrap;
     
 }
+ul{
+        justify-content: space-between;
+     }
+
 }
+
+
+
+    
+
+
+
+
+
 @media (min-width: 1024px){
 
 .articulo-base{
@@ -136,4 +151,10 @@ flex-direction: column;
          margin: 30px;
          padding: 30px;
      }
+     .footerSection{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
 }
