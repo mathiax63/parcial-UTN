@@ -28,3 +28,20 @@ if(mar && bosques){
     cajabosques.style.display="block"
     cajaMar.style.display = "block" 
 }
+
+
+let apellido = document.getElementById("apellido")
+
+let email = document.getElementById("email")
+
+
+let nombre1 = document.getElementById("nombre")
+let ubicacion = document.getElementById("lugar").value
+  
+let validador = new RegExp(ubicacion[lugar])
+
+if(validador.test(codigo.value)){
+    nombre1.setCustomValidity("")
+}else{
+    nombre1.setCustomValidity()
+}

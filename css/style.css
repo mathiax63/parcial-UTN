@@ -20,6 +20,10 @@ ul{
     flex-wrap: wrap;
     
 }
+form{
+    
+    margin: 30px;
+}
 
 .links{
     border-radius: 3px;
@@ -91,6 +95,9 @@ header{
 p{
     color: white;
 }
+.p1{
+    color: white;
+}
 .reDonar{
     padding: 3px;
     background-color: #00bb2d;
@@ -135,7 +142,12 @@ ul{
 @media (min-width: 1024px){
 
 .articulo-base{
-    display: flex;
+    margin: 20px;
+}
+form{
+    
+    justify-content: space-between;
+    flex-direction: column; 
 }
     .links{
         
@@ -156,5 +168,10 @@ ul{
         justify-content: space-around;
         flex-wrap: wrap;
         
+    }
+    input{
+        display: flex;
+        margin: 5px;
+       
     }
 }
