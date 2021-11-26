@@ -130,7 +130,20 @@ ul{
      }
 
 }
-
+input, textarea {
+    display: block;
+    padding: 7px;
+    margin: 15px;
+    width: 40%;
+    
+}
+select{
+    margin: 10px;
+}
+.botnes{
+    align-items: center;
+    text-align: center;
+}
 
 
     
@@ -170,7 +183,7 @@ form{
         
     }
     input{
-        display: flex;
+        
         margin: 5px;
        
     }
