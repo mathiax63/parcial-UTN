@@ -64,7 +64,12 @@ function validarAlUsuario(){
         nombre1.style.backgroundColor = "#ff8080"
         nombre1.setCustomValidity("Ingrese su nombre")
 
-    }else{
+    }else if (nombre1.value.length >= 10){
+         
+            nombre1.style.backgroundColor = "#ff8080"
+            nombre1.setCustomValidity("Su nombre debe tener menos de 10 caracteres")
+    }
+    else{
         nombre1.style.backgroundColor = "#adebad"
         nombre1.setCustomValidity("")
     }
@@ -72,21 +77,44 @@ function validarAlUsuario(){
 }
 
 function validarSuEmail(){
+    let regexEmail = /^([A-Za-z0-9_\-\+\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+
     if(email.value == "") {
+
         email.style.backgroundColor = "#ff8080"
         email.setCustomValidity("Ingrese su email para poder contactarlo")
 
-    }else{
+    }else if (email.value.length >= 25){
+         
+        email.style.backgroundColor = "#ff8080"
+        email.setCustomValidity("Su email debe tener menos de 25 caracteres")
+
+}else if (!email.value.match(regexEmail)){
+
+    email.setCustomValidity("Debe ingresar un email valido")
+}
+    else{
+
         email.style.backgroundColor = "#adebad"
         email.setCustomValidity("")
+
     }
+
 
 }
 function validarApellido(){
 if(apellido.value == ""){
     apellido.style.backgroundColor = "#ff8080"
     apellido.setCustomValidity("Ingrese su apellido")
-}else{
+
+}else if (apellido.value.length >= 10){
+
+    apellido.style.backgroundColor = "#ff8080"
+    apellido.setCustomValidity("Su apellido debe contar con menos de 10 caracteres")
+
+}
+
+else{
     apellido.style.backgroundColor = "#adebad"
     apellido.setCustomValidity("")
 }
@@ -97,28 +125,60 @@ function validarAlUsuarioMar(){
         nombre1Mar.style.backgroundColor = "#ff8080"
         nombre1Mar.setCustomValidity("Ingrese su nombre")
 
-    }else{
+    }else if (nombre1Mar.value.length >= 10) {
+
+        nombre1Mar.style.backgroundColor = "#ff8080"
+        nombre1Mar.setCustomValidity("Su nombre debe tener menos de 10 caracteres")
+
+    }
+    
+    else{
         nombre1Mar.style.backgroundColor = "#adebad"
         nombre1Mar.setCustomValidity("")
     }
 
 }
 function validarApellidoMar(){
+    
     if(apellidoMar.value == ""){
+
         apellidoMar.style.backgroundColor = "#ff8080"
         apellidoMar.setCustomValidity("Ingrese su apellido")
-    }else{
+
+    }else if (apellidoMar.value.length == 10){
+
+        apellidoMar.style.backgroundColor = "#ff8080"
+        apellidoMar.setCustomValidity("Su apellido debe contener menos de 10 caracteres")
+
+    }
+
+    else{
+
         apellidoMar.style.backgroundColor = "#adebad"
         apellidoMar.setCustomValidity("")
+
     }
     
     }
 function validarSuEmailMar(){
+    let regexEmail = /^([A-Za-z0-9_\-\+\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/
+
     if(emailMar.value == "") {
+
         emailMar.style.backgroundColor = "#ff8080"
         emailMar.setCustomValidity("Ingrese su email para poder contactarlo")
 
+    }else if (emailMar.value.length >= 25) {
+
+        emailMar.style.backgroundColor = "#ff8080"
+        emailMar.setCustomValidity("Su email debe tener 25 caracteres o menos")
+
+    }else if (!emailMar.value.match(regexEmail)){
+
+        emailMar.setCustomValidity("Debe ingresar un email valido")
+    
     }else{
+
         emailMar.style.backgroundColor = "#adebad"
         emailMar.setCustomValidity("")
     }
