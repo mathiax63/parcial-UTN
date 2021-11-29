@@ -36,7 +36,8 @@ let apellido = document.getElementById("apellido")
 let apellidoMar = document.getElementById("apellidoMar")
  let email = document.getElementById("email") 
  let emailMar = document.getElementById("emailMar") 
- 
+ let edadMar = document.getElementById("edadMar")
+ let edad = document.getElementById("edad")
 
 
 
@@ -47,8 +48,8 @@ function validarCredenciales(){
     nombre1Mar.addEventListener("input", validarAlUsuarioMar)
     apellidoMar.addEventListener("input", validarApellidoMar)
     emailMar.addEventListener("input", validarSuEmailMar)
-
-
+    edadMar.addEventListener("input", validarEdadMar)
+    edad.addEventListener("input", validarEdad)
 
 
     validarAlUsuario()
@@ -57,6 +58,8 @@ function validarCredenciales(){
     validarAlUsuarioMar()
     validarApellidoMar()
     validarSuEmailMar()
+    validarEdad()
+    validarEdadMar()
 }
 
 function validarAlUsuario(){
@@ -182,6 +185,39 @@ function validarSuEmailMar(){
         emailMar.style.backgroundColor = "#adebad"
         emailMar.setCustomValidity("")
     }
+
+}
+
+function validarEdadMar(){
+    if(edadMar.value < 15) {
+        edadMar.style.backgroundColor = "#ff8080"
+        edadMar.setCustomValidity("Para ser voluntario debe tener 15 años de edad o mas")
+
+    }else if (edadMar.value > 70){
+         
+        edadMar.style.backgroundColor = "#ff8080"
+        edadMar.setCustomValidity("Para ser voluntario debe tener 70 años de edad o menos")
+    }
+    else{
+        edadMar.style.backgroundColor = "#adebad"
+        edadMar.setCustomValidity("")
+    }
+
+}
+function validarEdad(){
+    if(edad.value < 15){
+        edad.style.backgroundColor ="#ff8080"
+        edad.setCustomValidity("Para ser voluntario debe tener 15 años de edad o mas")
+    }else if (edad.value > 70){
+        edad.style.backgroundColor ="#ff8080"
+        edad.setCustomValidity("Para ser voluntario debe tener 70 años de edad o menos")
+
+    }else{
+        edad.style.backgroundColor = "#adebad"
+        edad.setCustomValidity("")
+    }
+
+
 
 }
 
